@@ -1,6 +1,20 @@
 version: 0.2
 
 phases:
+  install:
+    runtime-versions:
+      java: corretto17
+
+  pre_build:
+    commands:
+      - mvn test
+
   build:
     commands:
-      - echo "Hello"
+      - mvn clean package
+
+artifacts:
+  files:
+    - target/*.jar
+    - appspec.yml
+    - scripts/**/*
