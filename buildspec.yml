@@ -20,4 +20,4 @@ artifacts:
   files:
     - target/*.jar
     - appspec.yml
-    - scrip*s/**/*
+    - scripts/**/*
