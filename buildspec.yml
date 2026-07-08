@@ -8,14 +8,16 @@ phases:
 
   pre_build:
     commands:
+      - echo "Running Unit Test"
       - mvn test
 
   build:
     commands:
+      - echo "Building Application"
       - mvn clean package
 
 artifacts:
   files:
     - target/*.jar
     - appspec.yml
-    - scripts/**/*
+    - scrip*s/**/*
