@@ -13,7 +13,7 @@ public class HelloControllerTest {
                 new HelloController();
 
         assertEquals(
-                "Hello Modern AWS",
+                "Hello Modern AWS1",
                 controller.hello()
         );
     }
